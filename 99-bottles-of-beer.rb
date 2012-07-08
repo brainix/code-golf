@@ -1,7 +1,6 @@
-#!/usr/bin/env ruby
 def b n;"#{n} bottle"+(n>1?"s":"")+" of beer";end
 o=" on the wall"
 p=".\n"
-99.downto 1 do|n|
+99.downto(1){|n|
 puts b(n)+o+", "+b(n)+p+(n>1?"Take one down and pass it around":"Go to the store and buy some more")+", "+b(n>1?n-1:99)+o+p+(n>1?"\n":"")
-end
+}
