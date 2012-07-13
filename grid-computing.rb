@@ -1,4 +1,4 @@
-a,t=Array,10;g,o=a.new(t){a.new(t)},0
-t.times{|x|r=gets.split.map{|e|e.to_i};t.times{|y|g[x][y]=r[y]}}
-t.times{|x|p,q=0,0;t.times{|y|p+=g[x][y];q+=g[y][x]};o=o>p ?o:p;o=o>q ?o:q}
-p o
+s,c=0,Array.new(10,0)
+10.times{t,x=0,-1;r=gets.split.map{|e|e=e.to_i;c[x+=1]+=e;t+=e};s=s>t ?s:t}
+t=c.max
+p s>t ?s:t
